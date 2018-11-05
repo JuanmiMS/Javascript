@@ -12,6 +12,12 @@
  * but variables are still undefined.
  * 
  * Programming JavaScript Applications. Eric Elliott.
+ *
+ * La primera vez imprime 2 ya que primero buscará la función number() dentro de la misma función f(),
+ * al encontrarla la ejecuta e imprime 2.
+ * Seguidamente se ejecuta el console.log(number()) el cual ejecutará la primera función, mostrando 1.
+ *
+ *
  */
 
 

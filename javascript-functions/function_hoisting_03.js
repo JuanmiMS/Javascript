@@ -12,6 +12,8 @@
  * The value of number is not defined until runtime.
  * 
  * Programming JavaScript Applications. Eric Elliott.
+ *
+ * number() no existe dentro de la función f(), por lo que no la podrá ejecutar
  */
 
 
