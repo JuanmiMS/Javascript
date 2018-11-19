@@ -16,8 +16,13 @@ q.extend = function (obj) {
     let props = Object.getOwnPropertyNames(obj);
 
     for (prop in props) if (!this.hasOwnProperty(props[prop])) {
-        console.log("hey", prop);
+        //A THIS objeto le añade el parametro recibido (props[prop]). p es el objeto donde se busca la propiedad,
+        // y props[prop] la propiedad de donde se obtendrá la info
+        console.log("getOWnPr: ", Object.getOwnPropertyDescriptor(p, props[prop]));
+        Object.defineProperty(this, props[prop], Object.getOwnPropertyDescriptor(p, props[prop]));
     }
+
+    return this
 };
 
 var p = Object.defineProperties({}, {
