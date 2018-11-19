@@ -12,9 +12,13 @@
 
 var q = {};
 
-/**
- * tu codigo aqui
- */
+q.extend = function (obj) {
+    let props = Object.getOwnPropertyNames(obj);
+
+    for (prop in props) if (!this.hasOwnProperty(props[prop])) {
+        console.log("hey", prop);
+    }
+};
 
 var p = Object.defineProperties({}, {
     x: { value: 1, writable: true, enumerable:true, configurable:true },
