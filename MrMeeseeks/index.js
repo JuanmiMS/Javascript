@@ -8,6 +8,5 @@ caja.getInstance();
 
 console.log("[Jerry] Press the button");
 caja.createMrMeeseek();
-
 caja.createMrMeeseek();
 caja.createMrMeeseek();

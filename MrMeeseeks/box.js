@@ -13,10 +13,6 @@ function Box ()  {
         return "Box_" + (Math.random().toString(36).substr(2, 9)).toLocaleUpperCase();
     }
 
-    function createMrMeeseeks() {
-        var caja = importaBox.Box().getInstance();
-    }
-
     return {
         getInstance: function () {
             if (!instance) {
@@ -25,10 +21,8 @@ function Box ()  {
             return instance;
         },
         createMrMeeseek : function () {
-            return new MrMeeseeks.MrMeeseeks().getInstance();
+            return new MrMeeseeks.MrMeeseeks().create()
         }
-
-
     }
 };
 

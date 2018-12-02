@@ -14,11 +14,9 @@ function MrMeeseeks ()  {
     }
 
     return {
-        getInstance: function () {
+        create: function () {
             return createInstance();
         }
-
-
     }
 };
 
