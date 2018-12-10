@@ -1,0 +1,12 @@
+la caja tiene crear un mr meeseks a partir de un prototipo (Object create)
+SOLO PUEDE HABER 1 CAJA (singleton)
+
+speakOnCreate -> siempre mismo saludo (im mr meeseeks look at me)
+makeRequest(que hacer, donde) ->
+fulFillRequest(msg) -> mr meeseeks cumple el deseo (msg + all done)
+
+Añadir al objeto MrMeeseeks la capacidad de hacer:
+ - meeseeks creado por otro meeseeks saludan diferente "hiiii" (todos estos mr meeseeks se meten en una array). Array de realidad (los 4 primeros) y array de los otros meeseeks.
+- Se crea un objeto llamado olla y checkear que TOMATE está en la OLLA (ifnot: decir "i wanna die"). Tomate dentro del objeto OLLA. Todo esto en un método nuevo llamado: learnRequest
+learnRequest (func, obj) -> la función mete tomate dentro del objeto olla y comprueba que está ahí. Por último dice "that's a lower handicap stro-o-ke" y se eliminan en orden de creación, del primero al PENULTIMO.
+El ÚLTIMO mr meeseeks se le envía un nuevo método que haga CEBOLLA está en la COPA (tupp)

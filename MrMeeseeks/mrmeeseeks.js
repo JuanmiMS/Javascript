@@ -13,9 +13,17 @@ function MrMeeseeks ()  {
         console.log("["+getName()+"] I'm Mr. Meeseeks! Look at me!")
     }
 
+    function makeRequest(whatDo, whereDo) {
+        console.log("Hacer "+whatDo+ " en "+whereDo);
+    }
+
+
     return {
         create: function () {
             return createInstance();
+        },
+        makeRequest : function(a, b) {
+            return makeRequest(a,b);
         }
     }
 };

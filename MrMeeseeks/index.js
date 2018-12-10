@@ -7,6 +7,5 @@ caja.getInstance();
 
 
 console.log("[Jerry] Press the button");
-caja.createMrMeeseek();
-caja.createMrMeeseek();
-caja.createMrMeeseek();
+let mrMsJerry = caja.createMrMeeseek();
+mrMsJerry.makeRequest("abre un tarro", "la cocina");
