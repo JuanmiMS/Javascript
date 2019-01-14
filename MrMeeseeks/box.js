@@ -21,7 +21,8 @@ function Box ()  {
             return instance;
         },
         createMrMeeseek : function () {
-            return new MrMeeseeks.MrMeeseeks().create()
+            let a = new MrMeeseeks('holis');
+            return a;
         }
     }
 };
