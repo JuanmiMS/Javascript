@@ -10,7 +10,20 @@ export class MrMeeseeks{
 
 }
 
-// export default MrMeeseeks;
+    function makeRequest(whatDo, whereDo) {
+        console.log("Hacer "+whatDo+ " en "+whereDo);
+    }
+
+
+    return {
+        create: function () {
+            return createInstance();
+        },
+        makeRequest : function(a, b) {
+            return makeRequest(a,b);
+        }
+    }
+};
 
 // exports.MrMeeseeks = function() {
 //     return MrMeeseeks;

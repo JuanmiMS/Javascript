@@ -10,9 +10,5 @@ let mr = new MrMeeseeks('hola');
 
 
 console.log("[Jerry] Press the button");
-
-// let ms1 = caja.createMrMeeseek();
-// let ms2 = caja.createMrMeeseek();
-//
-// ms1.getName();
-// ms2.getName();
+let mrMsJerry = caja.createMrMeeseek();
+mrMsJerry.makeRequest("abre un tarro", "la cocina");
