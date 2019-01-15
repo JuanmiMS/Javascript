@@ -23,10 +23,14 @@ function getTags() {
 
     var headings = document.querySelectorAll("h1, h2, h3");
 
+
+
     for (let i = 0; i < headings.length; i++) {
         let TOC = document.getElementsByTagName("TOC")[0];
-        let contenido = document.createElement("div");
-        contenido.innerHTML += headings[i].innerHTML;
+        let contenido = document.createElement("a");
+        headings[i].id = "heading"+i;
+        contenido.setAttribute("href","#heading"+i);
+        contenido.innerHTML += "-" + headings[i].innerHTML + "<br>";
         TOC.appendChild(contenido);
     }
 
