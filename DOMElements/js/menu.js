@@ -31,6 +31,7 @@ function getTags() {
         headings[i].id = "heading"+i;
         contenido.setAttribute("href","#heading"+i);
         contenido.innerHTML += "-" + headings[i].innerHTML + "<br>";
+        // TOC.appendChild(contenido);
         TOC.appendChild(contenido);
     }
 
