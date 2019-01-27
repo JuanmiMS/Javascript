@@ -1,0 +1,19 @@
+{
+  "name": "mrmeeseeks",
+  "version": "1.0.0",
+  "description": "daw",
+  "main": "MrMeeseeks/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanmiMS/Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanmiMS/Javascript/issues"
+  },
+  "homepage": "https://github.com/JuanmiMS/Javascript#readme"
+}
