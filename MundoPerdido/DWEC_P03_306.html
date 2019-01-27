@@ -56,15 +56,22 @@
         document.getElementsByTagName("a")[i].href = document.getElementsByTagName("a")[i].href.replace("http","https");
     }
 
-</script>
-
-<!--Ejercicio 3-->
-<script>
-
     for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
         let parrafo = document.getElementsByTagName("p")[i];
         parrafo.className === "importante" ? parrafo.className = "resaltar" : parrafo.className = "normal"
     }
+
+
+    let impLink = 0;
+    for (let i = 0; i < document.getElementsByTagName("a").length; i++) {
+        let enlace = document.getElementsByTagName("a")[i];
+
+        if ( enlace.className === "importante"){
+            enlace.setAttribute("name", "importante"+impLink);
+            impLink++;
+        }
+    }
+
 </script>
 
 
