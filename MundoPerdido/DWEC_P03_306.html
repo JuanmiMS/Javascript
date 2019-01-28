@@ -90,8 +90,9 @@
         enlaces[i].href = enlaces[i].href.replace("http", "https");
     }
 
-    for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
-        let parrafo = document.getElementsByTagName("p")[i];
+    let parrafos = document.getElementsByTagName("p");
+    for (let i = 0; i < parrafos.length; i++) {
+        let parrafo =parrafos[i];
         parrafo.className === "importante" ? parrafo.className = "resaltar" : parrafo.className = "normal"
     }
 
