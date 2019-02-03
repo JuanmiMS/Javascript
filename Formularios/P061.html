@@ -4,25 +4,18 @@
 <title>DWEC_P06 Exercici 1</title>
 <script type="text/javascript">
 function retornaValor(objeto) {
-//alert(objeto.type);
 	switch (objeto.type) {
 		case "text":
 		case "textarea":
 			return objeto.value;
-		break;
+			break;
 		case "radio":
 		case "checkbox":
-			//			
-			if (objeto.checked) {
-				return objeto.value;
-			}
-			else {
-				return "";			
-			}
-		break;
+			return objeto.checked ? objeto.value : ""		
+			break;
 		case "select-one":
 			return objeto.options[objeto.selectedIndex].value;
-		break;
+			break;
 	}
 }
 function validateForm() {
@@ -32,11 +25,7 @@ function validateForm() {
 	for (var i = 0; i < fPrincipal.elements.length-1; i++) {
 		txtTemp = retornaValor(fPrincipal.elements[i]);
 		if (txtTemp != "") {
-			if (i != fPrincipal.elements.length-2) {
-				texto += txtTemp + ", ";
-			} else {
-				texto += txtTemp + ".";
-			}
+			i != fPrincipal.elements.length-2 ? texto += txtTemp + ", " : texto += txtTemp + "."
 			txtTemp = "";
 		}
 	}
